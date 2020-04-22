@@ -1,0 +1,8 @@
+# make a directory for star genome index
+mkdir ar_imitator_genome/STAR_index
+
+# make a directory for star read mapping
+mkdir ar_imitator_genome/STAR_mapped
+
+# Index the genome with STAR.
+./STAR --runMode genomeGenerate --genomeDir $HOME/ar_imitator_genome/STAR_index --genomeFastaFiles $HOME/imitator_genome/imitator.1.3.6.fa --runThreadN 24 --limitGenomeGenerateRAM 70744733397 --sjdbOverhang 149 --genomeChrBinNbits 18 --sjdbGTFfile $HOME/imitator_genome/Ranitomeya_imitator.functional.gff3 --sjdbGTFtagExonParentTranscript Parent
