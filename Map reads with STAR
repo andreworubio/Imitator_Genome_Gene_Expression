@@ -1,0 +1,81 @@
+# map reads with STAR
+
+    # reads B11
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B11/B11_FRRB202335955-1a_H373HDSXY_L2_1.fq.gz $HOME/ar_imitator_genome/raw_data/B11/B11_FRRB202335955-1a_H373HDSXY_L2_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B11 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y11
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y11/Y11_FRRB202335946-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y11/Y11_FRRB202335946-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y11/Y11 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B15
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B15/B15_FRRB202335956-1a_H3772DSXY_L2_1.fq.gz $HOME/ar_imitator_genome/raw_data/B15/B15_FRRB202335956-1a_H3772DSXY_L2_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B15/B15 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y15
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y15/Y15_FRRB202335947-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y15/Y15_FRRB202335947-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y15/Y15 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B24
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B24/B24_FRRB202335960-1a_H373HDSXY_L2_2.fq.gz $HOME/ar_imitator_genome/raw_data/B24/B24_FRRB202335960-1a_H373HDSXY_L2_1.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B24/B24 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y24
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y24/Y24_FRRB202335948-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y24/Y24_FRRB202335948-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y24/Y24 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B25
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B25/B25_FRRB202335957-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/B25/B25_FRRB202335957-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B25/B25 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y25
+
+    /STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y25/Y25_FRRB202335949-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y25/Y25_FRRB202335949-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y25/Y25 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    #reads B29
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B29/B29_FRRB202335958-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/B29/B29_FRRB202335958-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B29/B29 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y29
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y29/Y29_FRRB202335950-1a_H35MNDSXY_L4_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y29/Y29_FRRB202335950-1a_H35MNDSXY_L4_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y29/Y29 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B47
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B47/B47_FRRB202335959-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/B47/B47_FRRB202335959-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B47/B47 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y47
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y47/Y47_FRRB202335951-1a_H373HDSXY_L2_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y47/Y47_FRRB202335951-1a_H373HDSXY_L2_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y47/Y47 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B61
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B61/B61_FRRB202335961-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/B61/B61_FRRB202335961-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B61/B61 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y61
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y61/Y61_FRRB202335953-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y61/Y61_FRRB202335953-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y61/Y61 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads B63
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/B63/B63_FRRB202335962-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/B63/B63_FRRB202335962-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/B63/B63 --outSAMtype BAM Unsorted SortedByCoordinate
+
+    # reads Y63
+
+    ./STAR --runMode alignReads --genomeDir $HOME/ar_imitator_genome/STAR_index --readFilesIn $HOME/ar_imitator_genome/raw_data/Y63/Y63_FRRB202335954-1a_H37FKDSXY_L3_1.fq.gz $HOME/ar_imitator_genome/raw_data/Y63/Y63_FRRB202335954-1a_H37FKDSXY_L3_2.fq.gz --readFilesCommand zcat --runThreadN 16 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10
+    --quantMode GeneCounts --outFileNamePrefix $HOME/ar_imitator_genome/STAR_mapped/Y63/Y63 --outSAMtype BAM Unsorted SortedByCoordinate
